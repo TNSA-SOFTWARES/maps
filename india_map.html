@@ -1,0 +1,2433 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+        <title>NMaps</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="icon" type="image/x-icon" href="tnsa.png">
+      </head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = true;
+            L_DISABLE_3D = true;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0; border-radius: 30px;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0; border-radius: 30px;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6c0e2d5f36235e762b0416f23a8ffd73 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6c0e2d5f36235e762b0416f23a8ffd73" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6c0e2d5f36235e762b0416f23a8ffd73 = L.map(
+                "map_6c0e2d5f36235e762b0416f23a8ffd73",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bc70edbc115c9e78781f787854f25fbe = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6c0e2d5f36235e762b0416f23a8ffd73);
+        
+    
+            var feature_group_ff6ca47e76c77bff29f076ac4b641431 = L.featureGroup(
+                {}
+            ).addTo(map_6c0e2d5f36235e762b0416f23a8ffd73);
+        
+    
+            var marker_5d022989027d2403dbb01b07e9c7a889 = L.marker(
+                [19.076, 72.8777],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_3682dc174581acecd4efe460cd08d6f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5d022989027d2403dbb01b07e9c7a889.setIcon(icon_3682dc174581acecd4efe460cd08d6f2);
+        
+    
+        var popup_13ec161a8e9eef4c0ecc5440b1eac3b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2937bf20208aa326a33a64c5501ac0dc = $(`<div id="html_2937bf20208aa326a33a64c5501ac0dc" style="width: 100.0%; height: 100.0%;">Mumbai, Maharashtra</div>`)[0];
+                popup_13ec161a8e9eef4c0ecc5440b1eac3b5.setContent(html_2937bf20208aa326a33a64c5501ac0dc);
+            
+        
+
+        marker_5d022989027d2403dbb01b07e9c7a889.bindPopup(popup_13ec161a8e9eef4c0ecc5440b1eac3b5)
+        ;
+
+        
+    
+    
+            var marker_1bf0a69574ef5b0fa349faa08b000041 = L.marker(
+                [28.7041, 77.1025],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_908b12aabf2760a5dcf0f19bffc948b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1bf0a69574ef5b0fa349faa08b000041.setIcon(icon_908b12aabf2760a5dcf0f19bffc948b7);
+        
+    
+        var popup_50665b2a5182ec39272b8cf92e8e3cfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_592ea84473eb1fc227008dce889532f4 = $(`<div id="html_592ea84473eb1fc227008dce889532f4" style="width: 100.0%; height: 100.0%;">Delhi, Delhi</div>`)[0];
+                popup_50665b2a5182ec39272b8cf92e8e3cfc.setContent(html_592ea84473eb1fc227008dce889532f4);
+            
+        
+
+        marker_1bf0a69574ef5b0fa349faa08b000041.bindPopup(popup_50665b2a5182ec39272b8cf92e8e3cfc)
+        ;
+
+        
+    
+    
+            var marker_6847a054366910cc8454015ebff00e50 = L.marker(
+                [12.9716, 77.5946],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_920f590290151bd96ef5ba887a5c39cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6847a054366910cc8454015ebff00e50.setIcon(icon_920f590290151bd96ef5ba887a5c39cf);
+        
+    
+        var popup_e1110bdc08e47b7bd0334be2b9115fe5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2eae175b038a3a1ae47dae58cded11be = $(`<div id="html_2eae175b038a3a1ae47dae58cded11be" style="width: 100.0%; height: 100.0%;">Bengaluru, Karnataka</div>`)[0];
+                popup_e1110bdc08e47b7bd0334be2b9115fe5.setContent(html_2eae175b038a3a1ae47dae58cded11be);
+            
+        
+
+        marker_6847a054366910cc8454015ebff00e50.bindPopup(popup_e1110bdc08e47b7bd0334be2b9115fe5)
+        ;
+
+        
+    
+    
+            var marker_34fa1bc0351338a6a41178572b2ba46c = L.marker(
+                [22.5726, 88.3639],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_9f113557564193b48a723e106cbca1b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_34fa1bc0351338a6a41178572b2ba46c.setIcon(icon_9f113557564193b48a723e106cbca1b8);
+        
+    
+        var popup_d8b6470791603e3afa78c38702814952 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76f118297daebdae6e853cd22a58a053 = $(`<div id="html_76f118297daebdae6e853cd22a58a053" style="width: 100.0%; height: 100.0%;">Kolkata, West Bengal</div>`)[0];
+                popup_d8b6470791603e3afa78c38702814952.setContent(html_76f118297daebdae6e853cd22a58a053);
+            
+        
+
+        marker_34fa1bc0351338a6a41178572b2ba46c.bindPopup(popup_d8b6470791603e3afa78c38702814952)
+        ;
+
+        
+    
+    
+            var marker_48e78c12d076a6d24df1f0296b534ac1 = L.marker(
+                [13.0827, 80.2707],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_03fd1e9563af8daf23a206c73184b000 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_48e78c12d076a6d24df1f0296b534ac1.setIcon(icon_03fd1e9563af8daf23a206c73184b000);
+        
+    
+        var popup_03f23891d2f46e5aaa66ecadd338b3c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22df89a7447eb78f20b17034101f3052 = $(`<div id="html_22df89a7447eb78f20b17034101f3052" style="width: 100.0%; height: 100.0%;">Chennai, Tamil Nadu</div>`)[0];
+                popup_03f23891d2f46e5aaa66ecadd338b3c1.setContent(html_22df89a7447eb78f20b17034101f3052);
+            
+        
+
+        marker_48e78c12d076a6d24df1f0296b534ac1.bindPopup(popup_03f23891d2f46e5aaa66ecadd338b3c1)
+        ;
+
+        
+    
+    
+            var marker_c9a27226b64b40e4fab362557c61b0f7 = L.marker(
+                [17.385, 78.4867],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_2e14d08f418b402f9a858e3e000ea3d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c9a27226b64b40e4fab362557c61b0f7.setIcon(icon_2e14d08f418b402f9a858e3e000ea3d7);
+        
+    
+        var popup_ec2cb76ca82843648078cbe48795420b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_299ca53acd97d20e193c5943812cf2a7 = $(`<div id="html_299ca53acd97d20e193c5943812cf2a7" style="width: 100.0%; height: 100.0%;">Hyderabad, Telangana</div>`)[0];
+                popup_ec2cb76ca82843648078cbe48795420b.setContent(html_299ca53acd97d20e193c5943812cf2a7);
+            
+        
+
+        marker_c9a27226b64b40e4fab362557c61b0f7.bindPopup(popup_ec2cb76ca82843648078cbe48795420b)
+        ;
+
+        
+    
+    
+            var marker_ca31d184378d509228dd91506d81f1f2 = L.marker(
+                [23.0225, 72.5714],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_8531ddc79feba9a2d2511759005242c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ca31d184378d509228dd91506d81f1f2.setIcon(icon_8531ddc79feba9a2d2511759005242c1);
+        
+    
+        var popup_1af10b7281847e440dcc835b24745505 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2ff5433801e9e2b3426193ab058b2ab = $(`<div id="html_a2ff5433801e9e2b3426193ab058b2ab" style="width: 100.0%; height: 100.0%;">Ahmedabad, Gujarat</div>`)[0];
+                popup_1af10b7281847e440dcc835b24745505.setContent(html_a2ff5433801e9e2b3426193ab058b2ab);
+            
+        
+
+        marker_ca31d184378d509228dd91506d81f1f2.bindPopup(popup_1af10b7281847e440dcc835b24745505)
+        ;
+
+        
+    
+    
+            var marker_ea5b0629d51fd885c25afeeb110e9db6 = L.marker(
+                [18.5204, 73.8567],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_18a745857c20ffc88a21ebd834f2000f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ea5b0629d51fd885c25afeeb110e9db6.setIcon(icon_18a745857c20ffc88a21ebd834f2000f);
+        
+    
+        var popup_058664d535a29e3522614a96fce850ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25535ca4539c5a2711db80f9628ef703 = $(`<div id="html_25535ca4539c5a2711db80f9628ef703" style="width: 100.0%; height: 100.0%;">Pune, Maharashtra</div>`)[0];
+                popup_058664d535a29e3522614a96fce850ee.setContent(html_25535ca4539c5a2711db80f9628ef703);
+            
+        
+
+        marker_ea5b0629d51fd885c25afeeb110e9db6.bindPopup(popup_058664d535a29e3522614a96fce850ee)
+        ;
+
+        
+    
+    
+            var marker_a39c1bee187d6c94f241e4ba04677b99 = L.marker(
+                [21.1702, 72.8311],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_b174b02937e8ef7504cc94895cd2b46d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a39c1bee187d6c94f241e4ba04677b99.setIcon(icon_b174b02937e8ef7504cc94895cd2b46d);
+        
+    
+        var popup_4cbb913663c66bacf9bec6c92cb82078 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1eedb6a510508e8fa53cfa8ffb6248a4 = $(`<div id="html_1eedb6a510508e8fa53cfa8ffb6248a4" style="width: 100.0%; height: 100.0%;">Surat, Gujarat</div>`)[0];
+                popup_4cbb913663c66bacf9bec6c92cb82078.setContent(html_1eedb6a510508e8fa53cfa8ffb6248a4);
+            
+        
+
+        marker_a39c1bee187d6c94f241e4ba04677b99.bindPopup(popup_4cbb913663c66bacf9bec6c92cb82078)
+        ;
+
+        
+    
+    
+            var marker_425fe2b655d6ac2b4f4bb946381ea79a = L.marker(
+                [26.9124, 75.7873],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_a2f60cc2d69b4f5fb6f765feab02cf16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_425fe2b655d6ac2b4f4bb946381ea79a.setIcon(icon_a2f60cc2d69b4f5fb6f765feab02cf16);
+        
+    
+        var popup_0b1336f671091db458ba5c1f0be14b67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5060611301a682dc6bc1fe9d60349bf5 = $(`<div id="html_5060611301a682dc6bc1fe9d60349bf5" style="width: 100.0%; height: 100.0%;">Jaipur, Rajasthan</div>`)[0];
+                popup_0b1336f671091db458ba5c1f0be14b67.setContent(html_5060611301a682dc6bc1fe9d60349bf5);
+            
+        
+
+        marker_425fe2b655d6ac2b4f4bb946381ea79a.bindPopup(popup_0b1336f671091db458ba5c1f0be14b67)
+        ;
+
+        
+    
+    
+            var marker_f0372f5a98fc4a98788d348d8bf13c99 = L.marker(
+                [26.8467, 80.9462],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_e0b2fa221b97898ba1e8a226dea59dcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f0372f5a98fc4a98788d348d8bf13c99.setIcon(icon_e0b2fa221b97898ba1e8a226dea59dcc);
+        
+    
+        var popup_bf540055435746a5cb54f9db9674b7db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8aa4c1955e37e57173735c2e285805d = $(`<div id="html_d8aa4c1955e37e57173735c2e285805d" style="width: 100.0%; height: 100.0%;">Lucknow, Uttar Pradesh</div>`)[0];
+                popup_bf540055435746a5cb54f9db9674b7db.setContent(html_d8aa4c1955e37e57173735c2e285805d);
+            
+        
+
+        marker_f0372f5a98fc4a98788d348d8bf13c99.bindPopup(popup_bf540055435746a5cb54f9db9674b7db)
+        ;
+
+        
+    
+    
+            var marker_f991becdd59f0c0c75c07f1e74fd0aed = L.marker(
+                [26.4499, 80.3319],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_2eb971623d52ae371bc68cda988d37b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f991becdd59f0c0c75c07f1e74fd0aed.setIcon(icon_2eb971623d52ae371bc68cda988d37b3);
+        
+    
+        var popup_897375af950e69558857d0d4c109f9f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3b3c08ecc6aa16fafef62175890358e = $(`<div id="html_f3b3c08ecc6aa16fafef62175890358e" style="width: 100.0%; height: 100.0%;">Kanpur, Uttar Pradesh</div>`)[0];
+                popup_897375af950e69558857d0d4c109f9f7.setContent(html_f3b3c08ecc6aa16fafef62175890358e);
+            
+        
+
+        marker_f991becdd59f0c0c75c07f1e74fd0aed.bindPopup(popup_897375af950e69558857d0d4c109f9f7)
+        ;
+
+        
+    
+    
+            var marker_e3443998846d57ce8a0a71f9f0385f56 = L.marker(
+                [21.1458, 79.0882],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_dad4fbfb29c26cd0ab758e61bc7d0f3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e3443998846d57ce8a0a71f9f0385f56.setIcon(icon_dad4fbfb29c26cd0ab758e61bc7d0f3c);
+        
+    
+        var popup_bcacc3775ec82c96ceb87509397a8924 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab5e2a6dc6302c78367e519a086e7c32 = $(`<div id="html_ab5e2a6dc6302c78367e519a086e7c32" style="width: 100.0%; height: 100.0%;">Nagpur, Maharashtra</div>`)[0];
+                popup_bcacc3775ec82c96ceb87509397a8924.setContent(html_ab5e2a6dc6302c78367e519a086e7c32);
+            
+        
+
+        marker_e3443998846d57ce8a0a71f9f0385f56.bindPopup(popup_bcacc3775ec82c96ceb87509397a8924)
+        ;
+
+        
+    
+    
+            var marker_3fd9290d1e770eabfdb775c0fb541e77 = L.marker(
+                [22.7196, 75.8577],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_b15053007f80616290cd93d0c4e9eb42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3fd9290d1e770eabfdb775c0fb541e77.setIcon(icon_b15053007f80616290cd93d0c4e9eb42);
+        
+    
+        var popup_d8029a04f5e04f7debac0ad1e2378020 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b28a20bca5af14d84a69bfd5d9be2c68 = $(`<div id="html_b28a20bca5af14d84a69bfd5d9be2c68" style="width: 100.0%; height: 100.0%;">Indore, Madhya Pradesh</div>`)[0];
+                popup_d8029a04f5e04f7debac0ad1e2378020.setContent(html_b28a20bca5af14d84a69bfd5d9be2c68);
+            
+        
+
+        marker_3fd9290d1e770eabfdb775c0fb541e77.bindPopup(popup_d8029a04f5e04f7debac0ad1e2378020)
+        ;
+
+        
+    
+    
+            var marker_e873d9dd7f24e49c56600f4c369b3d20 = L.marker(
+                [19.2183, 72.9781],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_684ebade97c10b42a6ff5ae8af793aac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e873d9dd7f24e49c56600f4c369b3d20.setIcon(icon_684ebade97c10b42a6ff5ae8af793aac);
+        
+    
+        var popup_f4223b6ea843a66eb88a524b193b1ce9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d51ffae6d7698bf10f13f681fc9ad60 = $(`<div id="html_2d51ffae6d7698bf10f13f681fc9ad60" style="width: 100.0%; height: 100.0%;">Thane, Maharashtra</div>`)[0];
+                popup_f4223b6ea843a66eb88a524b193b1ce9.setContent(html_2d51ffae6d7698bf10f13f681fc9ad60);
+            
+        
+
+        marker_e873d9dd7f24e49c56600f4c369b3d20.bindPopup(popup_f4223b6ea843a66eb88a524b193b1ce9)
+        ;
+
+        
+    
+    
+            var marker_e91a09565ebf13a8ad781890dd75e0ad = L.marker(
+                [23.2599, 77.4126],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_878e07b8a2f1292166cbd90310a5c0fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e91a09565ebf13a8ad781890dd75e0ad.setIcon(icon_878e07b8a2f1292166cbd90310a5c0fb);
+        
+    
+        var popup_72c70bb94d96eb76017120a5af69ab23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08c9ea79114cdcc7ee751040fcca19ab = $(`<div id="html_08c9ea79114cdcc7ee751040fcca19ab" style="width: 100.0%; height: 100.0%;">Bhopal, Madhya Pradesh</div>`)[0];
+                popup_72c70bb94d96eb76017120a5af69ab23.setContent(html_08c9ea79114cdcc7ee751040fcca19ab);
+            
+        
+
+        marker_e91a09565ebf13a8ad781890dd75e0ad.bindPopup(popup_72c70bb94d96eb76017120a5af69ab23)
+        ;
+
+        
+    
+    
+            var marker_6e41e78606e2ce203b59d5e85f614fa5 = L.marker(
+                [25.5941, 85.1376],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_e205ebf91c68e8281c5744e4d3f8225d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6e41e78606e2ce203b59d5e85f614fa5.setIcon(icon_e205ebf91c68e8281c5744e4d3f8225d);
+        
+    
+        var popup_69f0663206a79d9d384e60104af566e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84d3a2d1665f6362d9f941a45c8bdd2c = $(`<div id="html_84d3a2d1665f6362d9f941a45c8bdd2c" style="width: 100.0%; height: 100.0%;">Patna, Bihar</div>`)[0];
+                popup_69f0663206a79d9d384e60104af566e8.setContent(html_84d3a2d1665f6362d9f941a45c8bdd2c);
+            
+        
+
+        marker_6e41e78606e2ce203b59d5e85f614fa5.bindPopup(popup_69f0663206a79d9d384e60104af566e8)
+        ;
+
+        
+    
+    
+            var marker_34ebc77fcf7095aa20e47db2f8fbfb95 = L.marker(
+                [22.3072, 73.1812],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_1da9e11774084abbf31384083bc830a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_34ebc77fcf7095aa20e47db2f8fbfb95.setIcon(icon_1da9e11774084abbf31384083bc830a8);
+        
+    
+        var popup_f5a1872cecfef9246edd4872b9ae1b37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c12b0c73c97e07e2655addbe3bbb721 = $(`<div id="html_9c12b0c73c97e07e2655addbe3bbb721" style="width: 100.0%; height: 100.0%;">Vadodara, Gujarat</div>`)[0];
+                popup_f5a1872cecfef9246edd4872b9ae1b37.setContent(html_9c12b0c73c97e07e2655addbe3bbb721);
+            
+        
+
+        marker_34ebc77fcf7095aa20e47db2f8fbfb95.bindPopup(popup_f5a1872cecfef9246edd4872b9ae1b37)
+        ;
+
+        
+    
+    
+            var marker_a0385b7cc66eee066f6512d4a50810dc = L.marker(
+                [28.6692, 77.4538],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_513387fb7bbbc8091952bd099bd65933 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a0385b7cc66eee066f6512d4a50810dc.setIcon(icon_513387fb7bbbc8091952bd099bd65933);
+        
+    
+        var popup_1ad40f17f9ce509daa063d5c92168634 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9e5dc0c51a9c13a9cea0d1c954162ce = $(`<div id="html_b9e5dc0c51a9c13a9cea0d1c954162ce" style="width: 100.0%; height: 100.0%;">Ghaziabad, Uttar Pradesh</div>`)[0];
+                popup_1ad40f17f9ce509daa063d5c92168634.setContent(html_b9e5dc0c51a9c13a9cea0d1c954162ce);
+            
+        
+
+        marker_a0385b7cc66eee066f6512d4a50810dc.bindPopup(popup_1ad40f17f9ce509daa063d5c92168634)
+        ;
+
+        
+    
+    
+            var marker_6dd9a84ea98a01e9dfbbfd4a6f4883ff = L.marker(
+                [30.901, 75.8573],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_8abb63bccc35e19786b4830e2114761f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6dd9a84ea98a01e9dfbbfd4a6f4883ff.setIcon(icon_8abb63bccc35e19786b4830e2114761f);
+        
+    
+        var popup_9cfe3dd739bc1672a081ca46ac55f949 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f84f2e85d57c819982e630bb78508c0a = $(`<div id="html_f84f2e85d57c819982e630bb78508c0a" style="width: 100.0%; height: 100.0%;">Ludhiana, Punjab</div>`)[0];
+                popup_9cfe3dd739bc1672a081ca46ac55f949.setContent(html_f84f2e85d57c819982e630bb78508c0a);
+            
+        
+
+        marker_6dd9a84ea98a01e9dfbbfd4a6f4883ff.bindPopup(popup_9cfe3dd739bc1672a081ca46ac55f949)
+        ;
+
+        
+    
+    
+            var marker_7f291b9c26620de86dd1e92cef505bc6 = L.marker(
+                [27.1767, 78.0081],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_e33d6a82a21db664d4cdab144b214cee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7f291b9c26620de86dd1e92cef505bc6.setIcon(icon_e33d6a82a21db664d4cdab144b214cee);
+        
+    
+        var popup_f28fbc8804c37bab5128d22470e832a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b7a28670e8cf36956444730b747d078 = $(`<div id="html_6b7a28670e8cf36956444730b747d078" style="width: 100.0%; height: 100.0%;">Agra, Uttar Pradesh</div>`)[0];
+                popup_f28fbc8804c37bab5128d22470e832a4.setContent(html_6b7a28670e8cf36956444730b747d078);
+            
+        
+
+        marker_7f291b9c26620de86dd1e92cef505bc6.bindPopup(popup_f28fbc8804c37bab5128d22470e832a4)
+        ;
+
+        
+    
+    
+            var marker_860d137b4ce8d553bb3e68fa0aa1386e = L.marker(
+                [20.011, 73.7903],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_4f6982620216ad1706973afda2171b7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_860d137b4ce8d553bb3e68fa0aa1386e.setIcon(icon_4f6982620216ad1706973afda2171b7c);
+        
+    
+        var popup_7ff8258d6c62c20f07d7fe7a40c96359 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0147f5d72a07fdadc2eb2e028d72be7 = $(`<div id="html_c0147f5d72a07fdadc2eb2e028d72be7" style="width: 100.0%; height: 100.0%;">Nashik, Maharashtra</div>`)[0];
+                popup_7ff8258d6c62c20f07d7fe7a40c96359.setContent(html_c0147f5d72a07fdadc2eb2e028d72be7);
+            
+        
+
+        marker_860d137b4ce8d553bb3e68fa0aa1386e.bindPopup(popup_7ff8258d6c62c20f07d7fe7a40c96359)
+        ;
+
+        
+    
+    
+            var marker_52169382b054747233b5dc463b486984 = L.marker(
+                [28.4089, 77.3178],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_a565e55df3f576300719956923ac3c58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_52169382b054747233b5dc463b486984.setIcon(icon_a565e55df3f576300719956923ac3c58);
+        
+    
+        var popup_9d8e6d34c9d869644b2a4bdaa52ff9b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79514425fb6bbc760c054bfc2423f4fe = $(`<div id="html_79514425fb6bbc760c054bfc2423f4fe" style="width: 100.0%; height: 100.0%;">Faridabad, Haryana</div>`)[0];
+                popup_9d8e6d34c9d869644b2a4bdaa52ff9b8.setContent(html_79514425fb6bbc760c054bfc2423f4fe);
+            
+        
+
+        marker_52169382b054747233b5dc463b486984.bindPopup(popup_9d8e6d34c9d869644b2a4bdaa52ff9b8)
+        ;
+
+        
+    
+    
+            var marker_9d232dd7a93bbcb7513d4b2eec4737ee = L.marker(
+                [28.9845, 77.7064],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_0c03ea68224adba666a3096aa72af35a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9d232dd7a93bbcb7513d4b2eec4737ee.setIcon(icon_0c03ea68224adba666a3096aa72af35a);
+        
+    
+        var popup_90eba7711eab4c36995f6e8d221f875e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dee4080bee7f70095a61f2e9389f259c = $(`<div id="html_dee4080bee7f70095a61f2e9389f259c" style="width: 100.0%; height: 100.0%;">Meerut, Uttar Pradesh</div>`)[0];
+                popup_90eba7711eab4c36995f6e8d221f875e.setContent(html_dee4080bee7f70095a61f2e9389f259c);
+            
+        
+
+        marker_9d232dd7a93bbcb7513d4b2eec4737ee.bindPopup(popup_90eba7711eab4c36995f6e8d221f875e)
+        ;
+
+        
+    
+    
+            var marker_b957eca6ad7845843d2bf079fc5f5000 = L.marker(
+                [22.3039, 70.8022],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_d2cefbf89af57d1646bd82fefd84e1dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b957eca6ad7845843d2bf079fc5f5000.setIcon(icon_d2cefbf89af57d1646bd82fefd84e1dc);
+        
+    
+        var popup_ad5553255a3966cac0de602bfc8aeb82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f97cbdfff36b85ac5571112a59f62c24 = $(`<div id="html_f97cbdfff36b85ac5571112a59f62c24" style="width: 100.0%; height: 100.0%;">Rajkot, Gujarat</div>`)[0];
+                popup_ad5553255a3966cac0de602bfc8aeb82.setContent(html_f97cbdfff36b85ac5571112a59f62c24);
+            
+        
+
+        marker_b957eca6ad7845843d2bf079fc5f5000.bindPopup(popup_ad5553255a3966cac0de602bfc8aeb82)
+        ;
+
+        
+    
+    
+            var marker_c921d739f8ffc40b38329cc9faae7831 = L.marker(
+                [25.3176, 82.9739],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_0620b62b13438daa0a993341f34bffcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c921d739f8ffc40b38329cc9faae7831.setIcon(icon_0620b62b13438daa0a993341f34bffcc);
+        
+    
+        var popup_e2a8c7be23d2d9972604a854faee7899 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4923772362c1aa58917c9179afe0658a = $(`<div id="html_4923772362c1aa58917c9179afe0658a" style="width: 100.0%; height: 100.0%;">Varanasi, Uttar Pradesh</div>`)[0];
+                popup_e2a8c7be23d2d9972604a854faee7899.setContent(html_4923772362c1aa58917c9179afe0658a);
+            
+        
+
+        marker_c921d739f8ffc40b38329cc9faae7831.bindPopup(popup_e2a8c7be23d2d9972604a854faee7899)
+        ;
+
+        
+    
+    
+            var marker_b5555c73705b1e1d65ed2247049c339e = L.marker(
+                [34.0836, 74.7973],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_a5eba0b4484068a906dab29795a33e42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b5555c73705b1e1d65ed2247049c339e.setIcon(icon_a5eba0b4484068a906dab29795a33e42);
+        
+    
+        var popup_5e0bec254fbdbf400f85b4381e3a464f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3188d9022921c1a3cfba382eb421c00 = $(`<div id="html_a3188d9022921c1a3cfba382eb421c00" style="width: 100.0%; height: 100.0%;">Srinagar, Jammu and Kashmir</div>`)[0];
+                popup_5e0bec254fbdbf400f85b4381e3a464f.setContent(html_a3188d9022921c1a3cfba382eb421c00);
+            
+        
+
+        marker_b5555c73705b1e1d65ed2247049c339e.bindPopup(popup_5e0bec254fbdbf400f85b4381e3a464f)
+        ;
+
+        
+    
+    
+            var marker_980895eda3b765e0bca44e3adfd9eb6e = L.marker(
+                [19.8762, 75.3433],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_90aea04ed1b2fe15c85ceb34e1b522d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_980895eda3b765e0bca44e3adfd9eb6e.setIcon(icon_90aea04ed1b2fe15c85ceb34e1b522d6);
+        
+    
+        var popup_10c94bb82cdb991909386b1f449797b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a2081f418f9c9276416d5092f00887a = $(`<div id="html_5a2081f418f9c9276416d5092f00887a" style="width: 100.0%; height: 100.0%;">Aurangabad, Maharashtra</div>`)[0];
+                popup_10c94bb82cdb991909386b1f449797b3.setContent(html_5a2081f418f9c9276416d5092f00887a);
+            
+        
+
+        marker_980895eda3b765e0bca44e3adfd9eb6e.bindPopup(popup_10c94bb82cdb991909386b1f449797b3)
+        ;
+
+        
+    
+    
+            var marker_2609cb9f991435ebd375cc6b5c04f15e = L.marker(
+                [23.7957, 86.4304],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_a66f72b3a33121acb1ca0164e50f4f8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2609cb9f991435ebd375cc6b5c04f15e.setIcon(icon_a66f72b3a33121acb1ca0164e50f4f8f);
+        
+    
+        var popup_8cc297b97fe36c93a122547838d1e954 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d2c54e97e77dc95600913d4d55f5e74 = $(`<div id="html_7d2c54e97e77dc95600913d4d55f5e74" style="width: 100.0%; height: 100.0%;">Dhanbad, Jharkhand</div>`)[0];
+                popup_8cc297b97fe36c93a122547838d1e954.setContent(html_7d2c54e97e77dc95600913d4d55f5e74);
+            
+        
+
+        marker_2609cb9f991435ebd375cc6b5c04f15e.bindPopup(popup_8cc297b97fe36c93a122547838d1e954)
+        ;
+
+        
+    
+    
+            var marker_297f40d1ccc8c2af6f5cbd1043057350 = L.marker(
+                [31.634, 74.8723],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_654d41fcf6c9c9410dd306c269c868f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_297f40d1ccc8c2af6f5cbd1043057350.setIcon(icon_654d41fcf6c9c9410dd306c269c868f5);
+        
+    
+        var popup_1557070465b8d81f162bd1da052baa31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5eed777414814b7bccbb750f279dbf9 = $(`<div id="html_a5eed777414814b7bccbb750f279dbf9" style="width: 100.0%; height: 100.0%;">Amritsar, Punjab</div>`)[0];
+                popup_1557070465b8d81f162bd1da052baa31.setContent(html_a5eed777414814b7bccbb750f279dbf9);
+            
+        
+
+        marker_297f40d1ccc8c2af6f5cbd1043057350.bindPopup(popup_1557070465b8d81f162bd1da052baa31)
+        ;
+
+        
+    
+    
+            var marker_e86ae749d8a13969e0c3f341b8b38f95 = L.marker(
+                [25.4358, 81.8463],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_5266110a07fe340d6060b8f05c0a804f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e86ae749d8a13969e0c3f341b8b38f95.setIcon(icon_5266110a07fe340d6060b8f05c0a804f);
+        
+    
+        var popup_9dba0ceb53048c85f533c60f29d44e3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56db09fc37eee5772f984df41f64653a = $(`<div id="html_56db09fc37eee5772f984df41f64653a" style="width: 100.0%; height: 100.0%;">Allahabad, Uttar Pradesh</div>`)[0];
+                popup_9dba0ceb53048c85f533c60f29d44e3a.setContent(html_56db09fc37eee5772f984df41f64653a);
+            
+        
+
+        marker_e86ae749d8a13969e0c3f341b8b38f95.bindPopup(popup_9dba0ceb53048c85f533c60f29d44e3a)
+        ;
+
+        
+    
+    
+            var marker_dc25b40c94531878e7f41449de8e07fd = L.marker(
+                [23.3441, 85.3096],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_798fb5dbbe8197e479827685cff11db7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dc25b40c94531878e7f41449de8e07fd.setIcon(icon_798fb5dbbe8197e479827685cff11db7);
+        
+    
+        var popup_8f74ca3f2e94907e2989418855604aa0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e28077d8a629d5aeb34c6e0e3200709 = $(`<div id="html_0e28077d8a629d5aeb34c6e0e3200709" style="width: 100.0%; height: 100.0%;">Ranchi, Jharkhand</div>`)[0];
+                popup_8f74ca3f2e94907e2989418855604aa0.setContent(html_0e28077d8a629d5aeb34c6e0e3200709);
+            
+        
+
+        marker_dc25b40c94531878e7f41449de8e07fd.bindPopup(popup_8f74ca3f2e94907e2989418855604aa0)
+        ;
+
+        
+    
+    
+            var marker_6a3a18e859fb067abfb6c37bb8aab06a = L.marker(
+                [22.5958, 88.2636],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_4e949c872af00f860d4ee88d6c27c73d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6a3a18e859fb067abfb6c37bb8aab06a.setIcon(icon_4e949c872af00f860d4ee88d6c27c73d);
+        
+    
+        var popup_93d2ebaad4d8e2ad1ca66a82ff40c700 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afaed772be77cffa9c3cb696664d11aa = $(`<div id="html_afaed772be77cffa9c3cb696664d11aa" style="width: 100.0%; height: 100.0%;">Howrah, West Bengal</div>`)[0];
+                popup_93d2ebaad4d8e2ad1ca66a82ff40c700.setContent(html_afaed772be77cffa9c3cb696664d11aa);
+            
+        
+
+        marker_6a3a18e859fb067abfb6c37bb8aab06a.bindPopup(popup_93d2ebaad4d8e2ad1ca66a82ff40c700)
+        ;
+
+        
+    
+    
+            var marker_7597e0fb3674aaf6ba28ddecb399f31e = L.marker(
+                [11.0168, 76.9558],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_f43c07ed520138ef3015d09475e7a0cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7597e0fb3674aaf6ba28ddecb399f31e.setIcon(icon_f43c07ed520138ef3015d09475e7a0cb);
+        
+    
+        var popup_0fe05dabe1648965e9be1ca47c92ad29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_590a3381f33e42a771b3b20940c072cf = $(`<div id="html_590a3381f33e42a771b3b20940c072cf" style="width: 100.0%; height: 100.0%;">Coimbatore, Tamil Nadu</div>`)[0];
+                popup_0fe05dabe1648965e9be1ca47c92ad29.setContent(html_590a3381f33e42a771b3b20940c072cf);
+            
+        
+
+        marker_7597e0fb3674aaf6ba28ddecb399f31e.bindPopup(popup_0fe05dabe1648965e9be1ca47c92ad29)
+        ;
+
+        
+    
+    
+            var marker_3d8868fd01a90c3fa01793dc6d47a7e5 = L.marker(
+                [16.5062, 80.648],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_2ff97f67f46050e0b7fe3dd920e44294 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3d8868fd01a90c3fa01793dc6d47a7e5.setIcon(icon_2ff97f67f46050e0b7fe3dd920e44294);
+        
+    
+        var popup_06273ae2a1641e7ffe5b97294c2cc645 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e7bfc0d905d4bab66cee84e0058103a = $(`<div id="html_3e7bfc0d905d4bab66cee84e0058103a" style="width: 100.0%; height: 100.0%;">Vijayawada, Andhra Pradesh</div>`)[0];
+                popup_06273ae2a1641e7ffe5b97294c2cc645.setContent(html_3e7bfc0d905d4bab66cee84e0058103a);
+            
+        
+
+        marker_3d8868fd01a90c3fa01793dc6d47a7e5.bindPopup(popup_06273ae2a1641e7ffe5b97294c2cc645)
+        ;
+
+        
+    
+    
+            var marker_5c232b964ddee49c1137e94d7af312a7 = L.marker(
+                [30.7333, 76.7794],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_e15b2f9220f1e910b9d11d9fee7eb477 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5c232b964ddee49c1137e94d7af312a7.setIcon(icon_e15b2f9220f1e910b9d11d9fee7eb477);
+        
+    
+        var popup_21e9d41ef17cac24a06ebd370f5349dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0270279d69e7b7481bc7088894dc30b = $(`<div id="html_c0270279d69e7b7481bc7088894dc30b" style="width: 100.0%; height: 100.0%;">Chandigarh, Chandigarh</div>`)[0];
+                popup_21e9d41ef17cac24a06ebd370f5349dd.setContent(html_c0270279d69e7b7481bc7088894dc30b);
+            
+        
+
+        marker_5c232b964ddee49c1137e94d7af312a7.bindPopup(popup_21e9d41ef17cac24a06ebd370f5349dd)
+        ;
+
+        
+    
+    
+            var marker_94aefec4864b9ba2d38ffdea2f07bcff = L.marker(
+                [12.2958, 76.6394],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_dc808fc3966678f4ef2511fc758ec298 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_94aefec4864b9ba2d38ffdea2f07bcff.setIcon(icon_dc808fc3966678f4ef2511fc758ec298);
+        
+    
+        var popup_de0dd8e3494f554c0af327aeff631888 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_970adcb0473cd577f4c9062774430ad4 = $(`<div id="html_970adcb0473cd577f4c9062774430ad4" style="width: 100.0%; height: 100.0%;">Mysore, Karnataka</div>`)[0];
+                popup_de0dd8e3494f554c0af327aeff631888.setContent(html_970adcb0473cd577f4c9062774430ad4);
+            
+        
+
+        marker_94aefec4864b9ba2d38ffdea2f07bcff.bindPopup(popup_de0dd8e3494f554c0af327aeff631888)
+        ;
+
+        
+    
+    
+            var marker_5d93ff2b9b700fcb0eb0ca601b1272fc = L.marker(
+                [26.2389, 73.0243],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_a4b0440446b81f1fd863d1160008fe31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5d93ff2b9b700fcb0eb0ca601b1272fc.setIcon(icon_a4b0440446b81f1fd863d1160008fe31);
+        
+    
+        var popup_5ddcf96da9053a155d031e49d24f1242 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5fab933a437de68c4a777e816f83a994 = $(`<div id="html_5fab933a437de68c4a777e816f83a994" style="width: 100.0%; height: 100.0%;">Jodhpur, Rajasthan</div>`)[0];
+                popup_5ddcf96da9053a155d031e49d24f1242.setContent(html_5fab933a437de68c4a777e816f83a994);
+            
+        
+
+        marker_5d93ff2b9b700fcb0eb0ca601b1272fc.bindPopup(popup_5ddcf96da9053a155d031e49d24f1242)
+        ;
+
+        
+    
+    
+            var marker_dbd0342433595e916dfce9670d061d39 = L.marker(
+                [26.1445, 91.7362],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_d20daf4dc48c4fbaf2a4e83588df9730 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dbd0342433595e916dfce9670d061d39.setIcon(icon_d20daf4dc48c4fbaf2a4e83588df9730);
+        
+    
+        var popup_6cc184e0dcb147579aea40448cfc849d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3526f5162028f82a2da57234037caa18 = $(`<div id="html_3526f5162028f82a2da57234037caa18" style="width: 100.0%; height: 100.0%;">Guwahati, Assam</div>`)[0];
+                popup_6cc184e0dcb147579aea40448cfc849d.setContent(html_3526f5162028f82a2da57234037caa18);
+            
+        
+
+        marker_dbd0342433595e916dfce9670d061d39.bindPopup(popup_6cc184e0dcb147579aea40448cfc849d)
+        ;
+
+        
+    
+    
+            var marker_f58103ba3fd4493c33fed59f15c748e0 = L.marker(
+                [19.033, 73.0297],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_a8f354b07f7392e82bf53079e1e84400 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f58103ba3fd4493c33fed59f15c748e0.setIcon(icon_a8f354b07f7392e82bf53079e1e84400);
+        
+    
+        var popup_dc3552724a8a2b512731a806090a4d98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1514443aa4d0b2b37726b71c290a151 = $(`<div id="html_e1514443aa4d0b2b37726b71c290a151" style="width: 100.0%; height: 100.0%;">Navi Mumbai, Maharashtra</div>`)[0];
+                popup_dc3552724a8a2b512731a806090a4d98.setContent(html_e1514443aa4d0b2b37726b71c290a151);
+            
+        
+
+        marker_f58103ba3fd4493c33fed59f15c748e0.bindPopup(popup_dc3552724a8a2b512731a806090a4d98)
+        ;
+
+        
+    
+    
+            var marker_a9198e91fd1678d11bb816f03cce653b = L.marker(
+                [26.2183, 78.1828],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_8a69d207fc290e2614523bf15e407c3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a9198e91fd1678d11bb816f03cce653b.setIcon(icon_8a69d207fc290e2614523bf15e407c3a);
+        
+    
+        var popup_7d40f730c4cbfb1aef9c20221f6f3a33 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_527e5f3d9d0b323cbf841f741a4e56db = $(`<div id="html_527e5f3d9d0b323cbf841f741a4e56db" style="width: 100.0%; height: 100.0%;">Gwalior, Madhya Pradesh</div>`)[0];
+                popup_7d40f730c4cbfb1aef9c20221f6f3a33.setContent(html_527e5f3d9d0b323cbf841f741a4e56db);
+            
+        
+
+        marker_a9198e91fd1678d11bb816f03cce653b.bindPopup(popup_7d40f730c4cbfb1aef9c20221f6f3a33)
+        ;
+
+        
+    
+    
+            var marker_50d53cd81bb299ffbebedd98463927d2 = L.marker(
+                [28.367, 79.4304],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_5680029763f1d36c62cb0bb75e61d55b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_50d53cd81bb299ffbebedd98463927d2.setIcon(icon_5680029763f1d36c62cb0bb75e61d55b);
+        
+    
+        var popup_37fe65f0b6a899670cd600afe20b4c9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a56f7c0f80a0121d58dbe5ecb7a052f2 = $(`<div id="html_a56f7c0f80a0121d58dbe5ecb7a052f2" style="width: 100.0%; height: 100.0%;">Bareilly, Uttar Pradesh</div>`)[0];
+                popup_37fe65f0b6a899670cd600afe20b4c9e.setContent(html_a56f7c0f80a0121d58dbe5ecb7a052f2);
+            
+        
+
+        marker_50d53cd81bb299ffbebedd98463927d2.bindPopup(popup_37fe65f0b6a899670cd600afe20b4c9e)
+        ;
+
+        
+    
+    
+            var marker_9bdeb6a1b593913715b761e9d5d76fa1 = L.marker(
+                [28.8389, 78.7768],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_6857d2c74ccfa4627c84b61be7627b29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9bdeb6a1b593913715b761e9d5d76fa1.setIcon(icon_6857d2c74ccfa4627c84b61be7627b29);
+        
+    
+        var popup_012702adc5479b272296301b42bff640 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7ebfe82944acf4c160ea0aedff4ae82 = $(`<div id="html_d7ebfe82944acf4c160ea0aedff4ae82" style="width: 100.0%; height: 100.0%;">Moradabad, Uttar Pradesh</div>`)[0];
+                popup_012702adc5479b272296301b42bff640.setContent(html_d7ebfe82944acf4c160ea0aedff4ae82);
+            
+        
+
+        marker_9bdeb6a1b593913715b761e9d5d76fa1.bindPopup(popup_012702adc5479b272296301b42bff640)
+        ;
+
+        
+    
+    
+            var marker_29bf4142ad23d5470e478be1b25cccb3 = L.marker(
+                [20.2961, 85.8245],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_eef5d0ca0edb95ef87c11f78fa9829ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_29bf4142ad23d5470e478be1b25cccb3.setIcon(icon_eef5d0ca0edb95ef87c11f78fa9829ba);
+        
+    
+        var popup_11111771e73f39f1428110378b0f5848 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c0e36abc6d231837fca1a9cb1200938 = $(`<div id="html_9c0e36abc6d231837fca1a9cb1200938" style="width: 100.0%; height: 100.0%;">Bhubaneswar, Odisha</div>`)[0];
+                popup_11111771e73f39f1428110378b0f5848.setContent(html_9c0e36abc6d231837fca1a9cb1200938);
+            
+        
+
+        marker_29bf4142ad23d5470e478be1b25cccb3.bindPopup(popup_11111771e73f39f1428110378b0f5848)
+        ;
+
+        
+    
+    
+            var marker_5657d69ddfbf2f33f2cd8d8ced302f25 = L.marker(
+                [22.8046, 86.2029],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_886e7ebe09022ecbf292494bc6881bcb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5657d69ddfbf2f33f2cd8d8ced302f25.setIcon(icon_886e7ebe09022ecbf292494bc6881bcb);
+        
+    
+        var popup_0f9404031062e1b3041a5be1a1ad1071 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19136e43a254e392397447f31fbce8b7 = $(`<div id="html_19136e43a254e392397447f31fbce8b7" style="width: 100.0%; height: 100.0%;">Jamshedpur, Jharkhand</div>`)[0];
+                popup_0f9404031062e1b3041a5be1a1ad1071.setContent(html_19136e43a254e392397447f31fbce8b7);
+            
+        
+
+        marker_5657d69ddfbf2f33f2cd8d8ced302f25.bindPopup(popup_0f9404031062e1b3041a5be1a1ad1071)
+        ;
+
+        
+    
+    
+            var marker_55b01b6d68faca268838e4e5f729daa6 = L.marker(
+                [27.8974, 78.088],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_3e2042bb3619c9690fb6a0cf74122b65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_55b01b6d68faca268838e4e5f729daa6.setIcon(icon_3e2042bb3619c9690fb6a0cf74122b65);
+        
+    
+        var popup_5ec5346a9d4526457ae3098270d53f8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1fb783803897c340c516a360dd16406 = $(`<div id="html_c1fb783803897c340c516a360dd16406" style="width: 100.0%; height: 100.0%;">Aligarh, Uttar Pradesh</div>`)[0];
+                popup_5ec5346a9d4526457ae3098270d53f8c.setContent(html_c1fb783803897c340c516a360dd16406);
+            
+        
+
+        marker_55b01b6d68faca268838e4e5f729daa6.bindPopup(popup_5ec5346a9d4526457ae3098270d53f8c)
+        ;
+
+        
+    
+    
+            var marker_c9347a22eb3e86da02d1ed524d4011a9 = L.marker(
+                [9.9312, 76.2673],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_953d123f2fbe0af6d1b3bd71f5234e63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c9347a22eb3e86da02d1ed524d4011a9.setIcon(icon_953d123f2fbe0af6d1b3bd71f5234e63);
+        
+    
+        var popup_d54eedcd03d66c41a526898806954e0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fed2362a0bed17363923f06d8ff710c = $(`<div id="html_3fed2362a0bed17363923f06d8ff710c" style="width: 100.0%; height: 100.0%;">Kochi, Kerala</div>`)[0];
+                popup_d54eedcd03d66c41a526898806954e0f.setContent(html_3fed2362a0bed17363923f06d8ff710c);
+            
+        
+
+        marker_c9347a22eb3e86da02d1ed524d4011a9.bindPopup(popup_d54eedcd03d66c41a526898806954e0f)
+        ;
+
+        
+    
+    
+            var marker_087d9fd866b458f5510120bc58c340fa = L.marker(
+                [20.4625, 85.883],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_88ef68b902378774958f2bdefd127a4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_087d9fd866b458f5510120bc58c340fa.setIcon(icon_88ef68b902378774958f2bdefd127a4f);
+        
+    
+        var popup_63840d22686593c3fa9804bb2a79e6ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21e7cf6cf7dbf326c10679bcb8063c83 = $(`<div id="html_21e7cf6cf7dbf326c10679bcb8063c83" style="width: 100.0%; height: 100.0%;">Cuttack, Odisha</div>`)[0];
+                popup_63840d22686593c3fa9804bb2a79e6ed.setContent(html_21e7cf6cf7dbf326c10679bcb8063c83);
+            
+        
+
+        marker_087d9fd866b458f5510120bc58c340fa.bindPopup(popup_63840d22686593c3fa9804bb2a79e6ed)
+        ;
+
+        
+    
+    
+            var marker_ecd9922e6562132ef17cae21bed30511 = L.marker(
+                [26.4499, 74.6399],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_8e2f802f14c320b0589e15554bbd27a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ecd9922e6562132ef17cae21bed30511.setIcon(icon_8e2f802f14c320b0589e15554bbd27a2);
+        
+    
+        var popup_d55dcddc141dee7086509c800b50bab4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed4c2a8b7f2e67dc1651f37ddcf7694f = $(`<div id="html_ed4c2a8b7f2e67dc1651f37ddcf7694f" style="width: 100.0%; height: 100.0%;">Ajmer, Rajasthan</div>`)[0];
+                popup_d55dcddc141dee7086509c800b50bab4.setContent(html_ed4c2a8b7f2e67dc1651f37ddcf7694f);
+            
+        
+
+        marker_ecd9922e6562132ef17cae21bed30511.bindPopup(popup_d55dcddc141dee7086509c800b50bab4)
+        ;
+
+        
+    
+    
+            var marker_d86573f5f1a384510606eb64c1f8679f = L.marker(
+                [16.7049, 74.2433],
+                {}
+            ).addTo(feature_group_ff6ca47e76c77bff29f076ac4b641431);
+        
+    
+            var icon_5e140ba7e36e585b40e000f3a60c223f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d86573f5f1a384510606eb64c1f8679f.setIcon(icon_5e140ba7e36e585b40e000f3a60c223f);
+        
+    
+        var popup_a66f7c7d46020396b70b6692ba6e9333 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de7a52d6145158d08e6fbbcc4e393eb5 = $(`<div id="html_de7a52d6145158d08e6fbbcc4e393eb5" style="width: 100.0%; height: 100.0%;">Kolhapur, Maharashtra</div>`)[0];
+                popup_a66f7c7d46020396b70b6692ba6e9333.setContent(html_de7a52d6145158d08e6fbbcc4e393eb5);
+            
+        
+
+        marker_d86573f5f1a384510606eb64c1f8679f.bindPopup(popup_a66f7c7d46020396b70b6692ba6e9333)
+        ;
+
+        
+    
+    
+            var feature_group_60c476493f6f8685c53b2d641f22d367 = L.featureGroup(
+                {}
+            ).addTo(map_6c0e2d5f36235e762b0416f23a8ffd73);
+        
+    
+            var marker_6ce41c9019aec1f83fa4b90485bdfaa9 = L.marker(
+                [25.0456, 85.0573],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_04e3ff592ea9a67a00fdd7f86cb85b15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6ce41c9019aec1f83fa4b90485bdfaa9.setIcon(icon_04e3ff592ea9a67a00fdd7f86cb85b15);
+        
+    
+        var popup_64b5e6cd54209720f9d5846eb32fad05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bcb9c2eb083f4a24f8fe41fc0cdc6d8 = $(`<div id="html_6bcb9c2eb083f4a24f8fe41fc0cdc6d8" style="width: 100.0%; height: 100.0%;">Dharnai, Bihar</div>`)[0];
+                popup_64b5e6cd54209720f9d5846eb32fad05.setContent(html_6bcb9c2eb083f4a24f8fe41fc0cdc6d8);
+            
+        
+
+        marker_6ce41c9019aec1f83fa4b90485bdfaa9.bindPopup(popup_64b5e6cd54209720f9d5846eb32fad05)
+        ;
+
+        
+    
+    
+            var marker_16f0c1a6f6e702de78a97dbafb16ff15 = L.marker(
+                [25.1867, 91.7476],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_19c7f4671977794c84558dd69c82b0fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_16f0c1a6f6e702de78a97dbafb16ff15.setIcon(icon_19c7f4671977794c84558dd69c82b0fc);
+        
+    
+        var popup_fb674f872b32d0f73352e619e9d975fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce7452d20dd8786c99c3d2403f46e6cf = $(`<div id="html_ce7452d20dd8786c99c3d2403f46e6cf" style="width: 100.0%; height: 100.0%;">Mawlynnong, Meghalaya</div>`)[0];
+                popup_fb674f872b32d0f73352e619e9d975fa.setContent(html_ce7452d20dd8786c99c3d2403f46e6cf);
+            
+        
+
+        marker_16f0c1a6f6e702de78a97dbafb16ff15.bindPopup(popup_fb674f872b32d0f73352e619e9d975fa)
+        ;
+
+        
+    
+    
+            var marker_b0d942ba28a7c25e5008c6aa94cb34af = L.marker(
+                [19.3825, 74.124],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_c028b455d2690b42d741bc68aa751ecb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b0d942ba28a7c25e5008c6aa94cb34af.setIcon(icon_c028b455d2690b42d741bc68aa751ecb);
+        
+    
+        var popup_50479e13857bf5c64a956d5739afb131 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00448f53103d491b02ba87a12f20c062 = $(`<div id="html_00448f53103d491b02ba87a12f20c062" style="width: 100.0%; height: 100.0%;">Hiware Bazar, Maharashtra</div>`)[0];
+                popup_50479e13857bf5c64a956d5739afb131.setContent(html_00448f53103d491b02ba87a12f20c062);
+            
+        
+
+        marker_b0d942ba28a7c25e5008c6aa94cb34af.bindPopup(popup_50479e13857bf5c64a956d5739afb131)
+        ;
+
+        
+    
+    
+            var marker_ee97d54487230f09b4b8a39c1e34eee9 = L.marker(
+                [22.9385, 73.352],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_b83fd1807a6a15e01c128667637ccf2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ee97d54487230f09b4b8a39c1e34eee9.setIcon(icon_b83fd1807a6a15e01c128667637ccf2d);
+        
+    
+        var popup_9a555e002ef0278fd65d8298ab9df33a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a64aa242f16ec760d3cac3fa6bd251b = $(`<div id="html_1a64aa242f16ec760d3cac3fa6bd251b" style="width: 100.0%; height: 100.0%;">Punsari, Gujarat</div>`)[0];
+                popup_9a555e002ef0278fd65d8298ab9df33a.setContent(html_1a64aa242f16ec760d3cac3fa6bd251b);
+            
+        
+
+        marker_ee97d54487230f09b4b8a39c1e34eee9.bindPopup(popup_9a555e002ef0278fd65d8298ab9df33a)
+        ;
+
+        
+    
+    
+            var marker_c2f70483346f6b561fbc952bb27ef063 = L.marker(
+                [19.7682, 74.4774],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_d4b76e42a04b83890b10f1f6d2eb3008 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c2f70483346f6b561fbc952bb27ef063.setIcon(icon_d4b76e42a04b83890b10f1f6d2eb3008);
+        
+    
+        var popup_4217019a98a318247b1016e0ed7b4a26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca205a235f5499d3915f68ef10f796c5 = $(`<div id="html_ca205a235f5499d3915f68ef10f796c5" style="width: 100.0%; height: 100.0%;">Shani Shingnapur, Maharashtra</div>`)[0];
+                popup_4217019a98a318247b1016e0ed7b4a26.setContent(html_ca205a235f5499d3915f68ef10f796c5);
+            
+        
+
+        marker_c2f70483346f6b561fbc952bb27ef063.bindPopup(popup_4217019a98a318247b1016e0ed7b4a26)
+        ;
+
+        
+    
+    
+            var marker_0e044b96ae679a978502078bded1c9ce = L.marker(
+                [27.0297, 92.3316],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_c6ed0c75c975429d29bd334c94c64436 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0e044b96ae679a978502078bded1c9ce.setIcon(icon_c6ed0c75c975429d29bd334c94c64436);
+        
+    
+        var popup_727849cfefd7fe25d45d2cf910e1e24f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95356ee2c2559812bb7c2d773e524c8d = $(`<div id="html_95356ee2c2559812bb7c2d773e524c8d" style="width: 100.0%; height: 100.0%;">Shergaon, Arunachal Pradesh</div>`)[0];
+                popup_727849cfefd7fe25d45d2cf910e1e24f.setContent(html_95356ee2c2559812bb7c2d773e524c8d);
+            
+        
+
+        marker_0e044b96ae679a978502078bded1c9ce.bindPopup(popup_727849cfefd7fe25d45d2cf910e1e24f)
+        ;
+
+        
+    
+    
+            var marker_e241f9ef7bbc16f03886458678cf0b54 = L.marker(
+                [27.0099, 75.9235],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_0eebcf40e018ebfd5539a5671a7c0ac2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e241f9ef7bbc16f03886458678cf0b54.setIcon(icon_0eebcf40e018ebfd5539a5671a7c0ac2);
+        
+    
+        var popup_a790efe6a9ecf12e04ae88b8108e3c71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_123ed0daa1bf5511e42007e14eae57c9 = $(`<div id="html_123ed0daa1bf5511e42007e14eae57c9" style="width: 100.0%; height: 100.0%;">Chappar, Rajasthan</div>`)[0];
+                popup_a790efe6a9ecf12e04ae88b8108e3c71.setContent(html_123ed0daa1bf5511e42007e14eae57c9);
+            
+        
+
+        marker_e241f9ef7bbc16f03886458678cf0b54.bindPopup(popup_a790efe6a9ecf12e04ae88b8108e3c71)
+        ;
+
+        
+    
+    
+            var marker_b064951372e33f10cd1b319aef953264 = L.marker(
+                [32.0856, 77.3142],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_65feae1ede6d20f12101876ccb2bbf1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b064951372e33f10cd1b319aef953264.setIcon(icon_65feae1ede6d20f12101876ccb2bbf1d);
+        
+    
+        var popup_795836b4bc44a0025bbb5b86ef26616c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2d0429c8618f8f8e98350fd3891b404 = $(`<div id="html_c2d0429c8618f8f8e98350fd3891b404" style="width: 100.0%; height: 100.0%;">Malana, Himachal Pradesh</div>`)[0];
+                popup_795836b4bc44a0025bbb5b86ef26616c.setContent(html_c2d0429c8618f8f8e98350fd3891b404);
+            
+        
+
+        marker_b064951372e33f10cd1b319aef953264.bindPopup(popup_795836b4bc44a0025bbb5b86ef26616c)
+        ;
+
+        
+    
+    
+            var marker_1348d7538157f81ccf8dd5aa34e7538a = L.marker(
+                [11.8794, 75.6894],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_1c52c528aee413b81c294f7f0d6ba3bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1348d7538157f81ccf8dd5aa34e7538a.setIcon(icon_1c52c528aee413b81c294f7f0d6ba3bc);
+        
+    
+        var popup_39bc11871273fc5fc7e3021d0f539527 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cc9ecc55cf98d2cd579226e19d0e270 = $(`<div id="html_5cc9ecc55cf98d2cd579226e19d0e270" style="width: 100.0%; height: 100.0%;">Kodinhi, Kerala</div>`)[0];
+                popup_39bc11871273fc5fc7e3021d0f539527.setContent(html_5cc9ecc55cf98d2cd579226e19d0e270);
+            
+        
+
+        marker_1348d7538157f81ccf8dd5aa34e7538a.bindPopup(popup_39bc11871273fc5fc7e3021d0f539527)
+        ;
+
+        
+    
+    
+            var marker_7bd6a520761170a7e00aaba531e709b9 = L.marker(
+                [17.4467, 78.3756],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_8df0e51af69b127ea0d657669209a00f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7bd6a520761170a7e00aaba531e709b9.setIcon(icon_8df0e51af69b127ea0d657669209a00f);
+        
+    
+        var popup_707df06b7de5f730699cfadea57c93db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36292979e3170b6f263796ca4d5ea46d = $(`<div id="html_36292979e3170b6f263796ca4d5ea46d" style="width: 100.0%; height: 100.0%;">Madhapur, Telangana</div>`)[0];
+                popup_707df06b7de5f730699cfadea57c93db.setContent(html_36292979e3170b6f263796ca4d5ea46d);
+            
+        
+
+        marker_7bd6a520761170a7e00aaba531e709b9.bindPopup(popup_707df06b7de5f730699cfadea57c93db)
+        ;
+
+        
+    
+    
+            var marker_c8356b66fc7950b5a7d140793ae067dd = L.marker(
+                [27.7477, 88.6909],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_8b0bb405b7da1c203379509acec2bc37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c8356b66fc7950b5a7d140793ae067dd.setIcon(icon_8b0bb405b7da1c203379509acec2bc37);
+        
+    
+        var popup_200f28abcc540a66b67e1cabb086ba78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcdf2763f232837b97aacbc098f86704 = $(`<div id="html_bcdf2763f232837b97aacbc098f86704" style="width: 100.0%; height: 100.0%;">Lachen, Sikkim</div>`)[0];
+                popup_200f28abcc540a66b67e1cabb086ba78.setContent(html_bcdf2763f232837b97aacbc098f86704);
+            
+        
+
+        marker_c8356b66fc7950b5a7d140793ae067dd.bindPopup(popup_200f28abcc540a66b67e1cabb086ba78)
+        ;
+
+        
+    
+    
+            var marker_3d7ce98fc3585829e3cada77b040145f = L.marker(
+                [30.8779, 79.6006],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_20f3aa1e1fb20b53d5a6c215f711d8fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3d7ce98fc3585829e3cada77b040145f.setIcon(icon_20f3aa1e1fb20b53d5a6c215f711d8fc);
+        
+    
+        var popup_650f1df44ee8f8d77e8a836167f2341d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1dfe8eae42b73db759f8ebe03694277 = $(`<div id="html_f1dfe8eae42b73db759f8ebe03694277" style="width: 100.0%; height: 100.0%;">Mana, Uttarakhand</div>`)[0];
+                popup_650f1df44ee8f8d77e8a836167f2341d.setContent(html_f1dfe8eae42b73db759f8ebe03694277);
+            
+        
+
+        marker_3d7ce98fc3585829e3cada77b040145f.bindPopup(popup_650f1df44ee8f8d77e8a836167f2341d)
+        ;
+
+        
+    
+    
+            var marker_f42cafbd139c580a417a9e0c7b6799f3 = L.marker(
+                [28.0667, 75.15],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_d19d2959362bd57b5cbc9770ea0686ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f42cafbd139c580a417a9e0c7b6799f3.setIcon(icon_d19d2959362bd57b5cbc9770ea0686ca);
+        
+    
+        var popup_77d363f69eb237c96d7b430f77ecb1b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f895fe23212a288e0cc7eafd48564b68 = $(`<div id="html_f895fe23212a288e0cc7eafd48564b68" style="width: 100.0%; height: 100.0%;">Mandawa, Rajasthan</div>`)[0];
+                popup_77d363f69eb237c96d7b430f77ecb1b1.setContent(html_f895fe23212a288e0cc7eafd48564b68);
+            
+        
+
+        marker_f42cafbd139c580a417a9e0c7b6799f3.bindPopup(popup_77d363f69eb237c96d7b430f77ecb1b1)
+        ;
+
+        
+    
+    
+            var marker_a80ae3a3e83dc12252e689f95bb28463 = L.marker(
+                [34.2602, 76.2025],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_0291f82476378a5b84291f770890340f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a80ae3a3e83dc12252e689f95bb28463.setIcon(icon_0291f82476378a5b84291f770890340f);
+        
+    
+        var popup_5cc454cfffb1c7ad543e44c76e7ee1be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0703b4c7f84ded052c2f578be7d2ae1b = $(`<div id="html_0703b4c7f84ded052c2f578be7d2ae1b" style="width: 100.0%; height: 100.0%;">Chiktan, Jammu and Kashmir</div>`)[0];
+                popup_5cc454cfffb1c7ad543e44c76e7ee1be.setContent(html_0703b4c7f84ded052c2f578be7d2ae1b);
+            
+        
+
+        marker_a80ae3a3e83dc12252e689f95bb28463.bindPopup(popup_5cc454cfffb1c7ad543e44c76e7ee1be)
+        ;
+
+        
+    
+    
+            var marker_4b9d82e12bad1caea1c48d7289d73f3e = L.marker(
+                [32.1466, 76.4525],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_e8b608f473bf8232cebc6b5c559eda56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4b9d82e12bad1caea1c48d7289d73f3e.setIcon(icon_e8b608f473bf8232cebc6b5c559eda56);
+        
+    
+        var popup_c35224128b657cc05410bd7d4e7a410e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54a7f98fd7f9c8a1aec76529df982dca = $(`<div id="html_54a7f98fd7f9c8a1aec76529df982dca" style="width: 100.0%; height: 100.0%;">Darang, Himachal Pradesh</div>`)[0];
+                popup_c35224128b657cc05410bd7d4e7a410e.setContent(html_54a7f98fd7f9c8a1aec76529df982dca);
+            
+        
+
+        marker_4b9d82e12bad1caea1c48d7289d73f3e.bindPopup(popup_c35224128b657cc05410bd7d4e7a410e)
+        ;
+
+        
+    
+    
+            var marker_05422fecab1c430827f82f5dac458f06 = L.marker(
+                [33.9046, 77.8107],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_2e0a9e1fa9140c4a48529b2479b9cbc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_05422fecab1c430827f82f5dac458f06.setIcon(icon_2e0a9e1fa9140c4a48529b2479b9cbc9);
+        
+    
+        var popup_4e10baadafa588b57d2e1402f588a4d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f56930345120dee7bda5538a8c349e5 = $(`<div id="html_3f56930345120dee7bda5538a8c349e5" style="width: 100.0%; height: 100.0%;">Hemis, Jammu and Kashmir</div>`)[0];
+                popup_4e10baadafa588b57d2e1402f588a4d2.setContent(html_3f56930345120dee7bda5538a8c349e5);
+            
+        
+
+        marker_05422fecab1c430827f82f5dac458f06.bindPopup(popup_4e10baadafa588b57d2e1402f588a4d2)
+        ;
+
+        
+    
+    
+            var marker_b3f0f0e5c3bddd45d1f21782452a3232 = L.marker(
+                [34.5115, 77.625],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_6b58b0e6f8a7a44976d07693e262e9c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b3f0f0e5c3bddd45d1f21782452a3232.setIcon(icon_6b58b0e6f8a7a44976d07693e262e9c9);
+        
+    
+        var popup_fd5932978d194ff7a82726ac1a8c1ac1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbed6037d2cd98b8315d1cb7af92ce2f = $(`<div id="html_cbed6037d2cd98b8315d1cb7af92ce2f" style="width: 100.0%; height: 100.0%;">Nubra, Jammu and Kashmir</div>`)[0];
+                popup_fd5932978d194ff7a82726ac1a8c1ac1.setContent(html_cbed6037d2cd98b8315d1cb7af92ce2f);
+            
+        
+
+        marker_b3f0f0e5c3bddd45d1f21782452a3232.bindPopup(popup_fd5932978d194ff7a82726ac1a8c1ac1)
+        ;
+
+        
+    
+    
+            var marker_13a9e9b5002be76f36323cdaab7a1b78 = L.marker(
+                [12.2979, 76.288],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_aa5c2a5ea527c7f512b64d7df181bdc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_13a9e9b5002be76f36323cdaab7a1b78.setIcon(icon_aa5c2a5ea527c7f512b64d7df181bdc8);
+        
+    
+        var popup_11ec0b2f9029b8b092f3b6e59839e7ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ac6037563399f5c1cbef8db4e7a84dc = $(`<div id="html_4ac6037563399f5c1cbef8db4e7a84dc" style="width: 100.0%; height: 100.0%;">Hunsur, Karnataka</div>`)[0];
+                popup_11ec0b2f9029b8b092f3b6e59839e7ed.setContent(html_4ac6037563399f5c1cbef8db4e7a84dc);
+            
+        
+
+        marker_13a9e9b5002be76f36323cdaab7a1b78.bindPopup(popup_11ec0b2f9029b8b092f3b6e59839e7ed)
+        ;
+
+        
+    
+    
+            var marker_935a6610907ea5c9f8f48ec640a910f6 = L.marker(
+                [23.8859, 70.1793],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_41898cce69542d7a4874befa36c03f2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_935a6610907ea5c9f8f48ec640a910f6.setIcon(icon_41898cce69542d7a4874befa36c03f2b);
+        
+    
+        var popup_d8bef3320dc364360c0114897f699177 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72eafe324d7cc6bd62139e3adb34a526 = $(`<div id="html_72eafe324d7cc6bd62139e3adb34a526" style="width: 100.0%; height: 100.0%;">Dholavira, Gujarat</div>`)[0];
+                popup_d8bef3320dc364360c0114897f699177.setContent(html_72eafe324d7cc6bd62139e3adb34a526);
+            
+        
+
+        marker_935a6610907ea5c9f8f48ec640a910f6.bindPopup(popup_d8bef3320dc364360c0114897f699177)
+        ;
+
+        
+    
+    
+            var marker_cea314e1612055bb63cc81ec9449f448 = L.marker(
+                [9.155, 79.4133],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_fa53b319b1bb0187a165d36ebcb6553f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cea314e1612055bb63cc81ec9449f448.setIcon(icon_fa53b319b1bb0187a165d36ebcb6553f);
+        
+    
+        var popup_79c96d11a1b5ecd7fb7cb02005330ad5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abdbe63a54d22ecb159a198f4802f316 = $(`<div id="html_abdbe63a54d22ecb159a198f4802f316" style="width: 100.0%; height: 100.0%;">Dhanushkodi, Tamil Nadu</div>`)[0];
+                popup_79c96d11a1b5ecd7fb7cb02005330ad5.setContent(html_abdbe63a54d22ecb159a198f4802f316);
+            
+        
+
+        marker_cea314e1612055bb63cc81ec9449f448.bindPopup(popup_79c96d11a1b5ecd7fb7cb02005330ad5)
+        ;
+
+        
+    
+    
+            var marker_74d3d69f6acf4e5c41fe93d7b2853526 = L.marker(
+                [25.3, 91.7167],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_79aa95a1ad1f00a1caa404210de63706 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_74d3d69f6acf4e5c41fe93d7b2853526.setIcon(icon_79aa95a1ad1f00a1caa404210de63706);
+        
+    
+        var popup_d1467e949f5ed55330a07496ac7a2fb5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4702799e3aceafc9110d2bbdac18c6ea = $(`<div id="html_4702799e3aceafc9110d2bbdac18c6ea" style="width: 100.0%; height: 100.0%;">Cherrapunji, Meghalaya</div>`)[0];
+                popup_d1467e949f5ed55330a07496ac7a2fb5.setContent(html_4702799e3aceafc9110d2bbdac18c6ea);
+            
+        
+
+        marker_74d3d69f6acf4e5c41fe93d7b2853526.bindPopup(popup_d1467e949f5ed55330a07496ac7a2fb5)
+        ;
+
+        
+    
+    
+            var marker_1970959f5856f07b32dc031b090a8c10 = L.marker(
+                [25.718, 94.831],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_e5146771757b4d43a6d7677e07ebef82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1970959f5856f07b32dc031b090a8c10.setIcon(icon_e5146771757b4d43a6d7677e07ebef82);
+        
+    
+        var popup_d8e6c48601ef8b77f3948aaf599d9c72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c81fad58ba9e45e3c41019497b42ad72 = $(`<div id="html_c81fad58ba9e45e3c41019497b42ad72" style="width: 100.0%; height: 100.0%;">Khonoma, Nagaland</div>`)[0];
+                popup_d8e6c48601ef8b77f3948aaf599d9c72.setContent(html_c81fad58ba9e45e3c41019497b42ad72);
+            
+        
+
+        marker_1970959f5856f07b32dc031b090a8c10.bindPopup(popup_d8e6c48601ef8b77f3948aaf599d9c72)
+        ;
+
+        
+    
+    
+            var marker_cce5f940f319fd812a468fd4fbfe1595 = L.marker(
+                [26.1606, 91.6112],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_02715d819918e6903a9e4b7336ff476c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cce5f940f319fd812a468fd4fbfe1595.setIcon(icon_02715d819918e6903a9e4b7336ff476c);
+        
+    
+        var popup_3a4ca09ee3c5255341c7d3136c4957e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d1fa6094870f6b555a7eba147b9661d = $(`<div id="html_8d1fa6094870f6b555a7eba147b9661d" style="width: 100.0%; height: 100.0%;">Sualkuchi, Assam</div>`)[0];
+                popup_3a4ca09ee3c5255341c7d3136c4957e3.setContent(html_8d1fa6094870f6b555a7eba147b9661d);
+            
+        
+
+        marker_cce5f940f319fd812a468fd4fbfe1595.bindPopup(popup_3a4ca09ee3c5255341c7d3136c4957e3)
+        ;
+
+        
+    
+    
+            var marker_18f32fb248e69b57cc901ad4f80f091e = L.marker(
+                [30.4629, 78.7827],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_b70d7c023bac71d0fc5b337a8e928143 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_18f32fb248e69b57cc901ad4f80f091e.setIcon(icon_b70d7c023bac71d0fc5b337a8e928143);
+        
+    
+        var popup_b9c7407fb2ab3a3a197a7ce224b5d0e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e8085fe296f2da4cbde338c05867681 = $(`<div id="html_9e8085fe296f2da4cbde338c05867681" style="width: 100.0%; height: 100.0%;">Khirsu, Uttarakhand</div>`)[0];
+                popup_b9c7407fb2ab3a3a197a7ce224b5d0e3.setContent(html_9e8085fe296f2da4cbde338c05867681);
+            
+        
+
+        marker_18f32fb248e69b57cc901ad4f80f091e.bindPopup(popup_b9c7407fb2ab3a3a197a7ce224b5d0e3)
+        ;
+
+        
+    
+    
+            var marker_b5e7f4005b0179269fb2bf24af506a1d = L.marker(
+                [10.328, 76.951],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_fcf4b6fc0cb57151ce0b97be15fd963e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b5e7f4005b0179269fb2bf24af506a1d.setIcon(icon_fcf4b6fc0cb57151ce0b97be15fd963e);
+        
+    
+        var popup_f0d07c296bbfa160b824df0172f61e5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7926c958c7fb09cf9cd911f1add26a5a = $(`<div id="html_7926c958c7fb09cf9cd911f1add26a5a" style="width: 100.0%; height: 100.0%;">Valparai, Tamil Nadu</div>`)[0];
+                popup_f0d07c296bbfa160b824df0172f61e5b.setContent(html_7926c958c7fb09cf9cd911f1add26a5a);
+            
+        
+
+        marker_b5e7f4005b0179269fb2bf24af506a1d.bindPopup(popup_f0d07c296bbfa160b824df0172f61e5b)
+        ;
+
+        
+    
+    
+            var marker_6be99d435412a84bdf1ed6e38a153e47 = L.marker(
+                [25.517, 91.2661],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_76c7a3a7981f0c06a3b0457bda419df9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6be99d435412a84bdf1ed6e38a153e47.setIcon(icon_76c7a3a7981f0c06a3b0457bda419df9);
+        
+    
+        var popup_2398d16177a40a32c66adb89c6da82d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0416f073a943f0ebeb1487f10cb276cc = $(`<div id="html_0416f073a943f0ebeb1487f10cb276cc" style="width: 100.0%; height: 100.0%;">Nongstoin, Meghalaya</div>`)[0];
+                popup_2398d16177a40a32c66adb89c6da82d8.setContent(html_0416f073a943f0ebeb1487f10cb276cc);
+            
+        
+
+        marker_6be99d435412a84bdf1ed6e38a153e47.bindPopup(popup_2398d16177a40a32c66adb89c6da82d8)
+        ;
+
+        
+    
+    
+            var marker_de28a6c361c643e984a701ac14ae9dab = L.marker(
+                [27.5845, 93.8287],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_2a1ce2bb5c3f82f077c7da5b3cb64b8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_de28a6c361c643e984a701ac14ae9dab.setIcon(icon_2a1ce2bb5c3f82f077c7da5b3cb64b8e);
+        
+    
+        var popup_2ea10b15e7e4fdc9887e3594b143346a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86599f37297aa89ec8e9ee9ac916da07 = $(`<div id="html_86599f37297aa89ec8e9ee9ac916da07" style="width: 100.0%; height: 100.0%;">Ziro, Arunachal Pradesh</div>`)[0];
+                popup_2ea10b15e7e4fdc9887e3594b143346a.setContent(html_86599f37297aa89ec8e9ee9ac916da07);
+            
+        
+
+        marker_de28a6c361c643e984a701ac14ae9dab.bindPopup(popup_2ea10b15e7e4fdc9887e3594b143346a)
+        ;
+
+        
+    
+    
+            var marker_65d424b79288ff73de35099a0f141a22 = L.marker(
+                [26.9959, 94.2222],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_d8ab0fd8e942fe1947c8f7d1310681ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_65d424b79288ff73de35099a0f141a22.setIcon(icon_d8ab0fd8e942fe1947c8f7d1310681ea);
+        
+    
+        var popup_6162b6ebc078569ca18cd8d0e4ea5095 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b691d7c38dd2e954a2d76cad5ede862d = $(`<div id="html_b691d7c38dd2e954a2d76cad5ede862d" style="width: 100.0%; height: 100.0%;">Majuli, Assam</div>`)[0];
+                popup_6162b6ebc078569ca18cd8d0e4ea5095.setContent(html_b691d7c38dd2e954a2d76cad5ede862d);
+            
+        
+
+        marker_65d424b79288ff73de35099a0f141a22.bindPopup(popup_6162b6ebc078569ca18cd8d0e4ea5095)
+        ;
+
+        
+    
+    
+            var marker_baaed4ce2cedaf9ee5a5d5d2c07e66e2 = L.marker(
+                [25.6617, 91.9367],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_3df95168433967240f8abaa42236284c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_baaed4ce2cedaf9ee5a5d5d2c07e66e2.setIcon(icon_3df95168433967240f8abaa42236284c);
+        
+    
+        var popup_54668a9612a0eb574110d9a3e48acafb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e294e7fdcb2cd87ebc3019aa1deb6b2 = $(`<div id="html_9e294e7fdcb2cd87ebc3019aa1deb6b2" style="width: 100.0%; height: 100.0%;">Mawphlang, Meghalaya</div>`)[0];
+                popup_54668a9612a0eb574110d9a3e48acafb.setContent(html_9e294e7fdcb2cd87ebc3019aa1deb6b2);
+            
+        
+
+        marker_baaed4ce2cedaf9ee5a5d5d2c07e66e2.bindPopup(popup_54668a9612a0eb574110d9a3e48acafb)
+        ;
+
+        
+    
+    
+            var marker_633585e8be7e0c0cca9acc9ac39b8144 = L.marker(
+                [26.8925, 88.1825],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_01b7854570d9d368ff45aaf2d013fcbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_633585e8be7e0c0cca9acc9ac39b8144.setIcon(icon_01b7854570d9d368ff45aaf2d013fcbd);
+        
+    
+        var popup_cfef5dde280da82dc3aabb3051f553e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1455d3221519169c7d53e2408932bf62 = $(`<div id="html_1455d3221519169c7d53e2408932bf62" style="width: 100.0%; height: 100.0%;">Mirik, West Bengal</div>`)[0];
+                popup_cfef5dde280da82dc3aabb3051f553e7.setContent(html_1455d3221519169c7d53e2408932bf62);
+            
+        
+
+        marker_633585e8be7e0c0cca9acc9ac39b8144.bindPopup(popup_cfef5dde280da82dc3aabb3051f553e7)
+        ;
+
+        
+    
+    
+            var marker_0790146d9a8547aebd870edc3f2d4258 = L.marker(
+                [27.3233, 88.2646],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_3c7a00be887db8ee8c19fa53d64b1128 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0790146d9a8547aebd870edc3f2d4258.setIcon(icon_3c7a00be887db8ee8c19fa53d64b1128);
+        
+    
+        var popup_60308912710fc5d81892a0642846e125 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_864137a271286267e84962d4df18d29e = $(`<div id="html_864137a271286267e84962d4df18d29e" style="width: 100.0%; height: 100.0%;">Pelling, Sikkim</div>`)[0];
+                popup_60308912710fc5d81892a0642846e125.setContent(html_864137a271286267e84962d4df18d29e);
+            
+        
+
+        marker_0790146d9a8547aebd870edc3f2d4258.bindPopup(popup_60308912710fc5d81892a0642846e125)
+        ;
+
+        
+    
+    
+            var marker_331c63ab7212f8a9423b02680bc27a27 = L.marker(
+                [27.3229, 88.3644],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_5683558fe5aa59580472c5a1d35d2ee6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_331c63ab7212f8a9423b02680bc27a27.setIcon(icon_5683558fe5aa59580472c5a1d35d2ee6);
+        
+    
+        var popup_f1546e1930cf7650f0ae0a9ea9d52aff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_352b617994927f91230a28f54f4fbd72 = $(`<div id="html_352b617994927f91230a28f54f4fbd72" style="width: 100.0%; height: 100.0%;">Ravangla, Sikkim</div>`)[0];
+                popup_f1546e1930cf7650f0ae0a9ea9d52aff.setContent(html_352b617994927f91230a28f54f4fbd72);
+            
+        
+
+        marker_331c63ab7212f8a9423b02680bc27a27.bindPopup(popup_f1546e1930cf7650f0ae0a9ea9d52aff)
+        ;
+
+        
+    
+    
+            var marker_0e031788d21eaaf9b908bcdaa0387819 = L.marker(
+                [32.36, 78.004],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_dd4a92591f7d24a6ac4ab7068247d431 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0e031788d21eaaf9b908bcdaa0387819.setIcon(icon_dd4a92591f7d24a6ac4ab7068247d431);
+        
+    
+        var popup_6c0108a4790b4d8161b9798d26a5a1ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3a11ad460614d9ed4732a480b7a5139 = $(`<div id="html_c3a11ad460614d9ed4732a480b7a5139" style="width: 100.0%; height: 100.0%;">Kibber, Himachal Pradesh</div>`)[0];
+                popup_6c0108a4790b4d8161b9798d26a5a1ee.setContent(html_c3a11ad460614d9ed4732a480b7a5139);
+            
+        
+
+        marker_0e031788d21eaaf9b908bcdaa0387819.bindPopup(popup_6c0108a4790b4d8161b9798d26a5a1ee)
+        ;
+
+        
+    
+    
+            var marker_23b0d669c386489d8c25776650c6cd81 = L.marker(
+                [24.7693, 93.8959],
+                {}
+            ).addTo(feature_group_60c476493f6f8685c53b2d641f22d367);
+        
+    
+            var icon_4aef8009cfd19dafded62f536a189a72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_23b0d669c386489d8c25776650c6cd81.setIcon(icon_4aef8009cfd19dafded62f536a189a72);
+        
+    
+        var popup_b5d01fc2b73b69a978a37ec6d8a038a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2244723d18baf9672e6e8f0db54dc0d3 = $(`<div id="html_2244723d18baf9672e6e8f0db54dc0d3" style="width: 100.0%; height: 100.0%;">Malom, Manipur</div>`)[0];
+                popup_b5d01fc2b73b69a978a37ec6d8a038a7.setContent(html_2244723d18baf9672e6e8f0db54dc0d3);
+            
+        
+
+        marker_23b0d669c386489d8c25776650c6cd81.bindPopup(popup_b5d01fc2b73b69a978a37ec6d8a038a7)
+        ;
+
+        
+    
+    
+            var feature_group_ff6ca47e76c77bff29f076ac4b641431searchControl = new L.Control.Search({
+                layer: feature_group_ff6ca47e76c77bff29f076ac4b641431,
+                
+                collapsed: false,
+                textPlaceholder: 'Search for cities',
+                position:'topleft',
+            
+                initial: false,
+                
+                zoom: 10,
+                
+                hideMarkerOnCollapse: true
+            
+                });
+                feature_group_ff6ca47e76c77bff29f076ac4b641431searchControl.on('search:locationfound', function(e) {
+                    feature_group_ff6ca47e76c77bff29f076ac4b641431.setStyle(function(feature){
+                        return feature.properties.style
+                    })
+                    
+                    if(e.layer._popup)
+                        e.layer.openPopup();
+                })
+                feature_group_ff6ca47e76c77bff29f076ac4b641431searchControl.on('search:collapsed', function(e) {
+                        feature_group_ff6ca47e76c77bff29f076ac4b641431.setStyle(function(feature){
+                            return feature.properties.style
+                    });
+                });
+            map_6c0e2d5f36235e762b0416f23a8ffd73.addControl( feature_group_ff6ca47e76c77bff29f076ac4b641431searchControl );
+
+        
+    
+            var feature_group_60c476493f6f8685c53b2d641f22d367searchControl = new L.Control.Search({
+                layer: feature_group_60c476493f6f8685c53b2d641f22d367,
+                
+                collapsed: false,
+                textPlaceholder: 'Search for villages',
+                position:'topleft',
+            
+                initial: false,
+                
+                zoom: 10,
+                
+                hideMarkerOnCollapse: true
+            
+                });
+                feature_group_60c476493f6f8685c53b2d641f22d367searchControl.on('search:locationfound', function(e) {
+                    feature_group_60c476493f6f8685c53b2d641f22d367.setStyle(function(feature){
+                        return feature.properties.style
+                    })
+                    
+                    if(e.layer._popup)
+                        e.layer.openPopup();
+                })
+                feature_group_60c476493f6f8685c53b2d641f22d367searchControl.on('search:collapsed', function(e) {
+                        feature_group_60c476493f6f8685c53b2d641f22d367.setStyle(function(feature){
+                            return feature.properties.style
+                    });
+                });
+            map_6c0e2d5f36235e762b0416f23a8ffd73.addControl( feature_group_60c476493f6f8685c53b2d641f22d367searchControl );
+
+        
+    
+            var layer_control_fc24fa6bca0311695ee20dd39b9ea190 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bc70edbc115c9e78781f787854f25fbe,
+                },
+                overlays :  {
+                    "Cities" : feature_group_ff6ca47e76c77bff29f076ac4b641431,
+                    "Villages" : feature_group_60c476493f6f8685c53b2d641f22d367,
+                },
+            };
+            L.control.layers(
+                layer_control_fc24fa6bca0311695ee20dd39b9ea190.base_layers,
+                layer_control_fc24fa6bca0311695ee20dd39b9ea190.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_6c0e2d5f36235e762b0416f23a8ffd73);
+        
+</script>
+</html>
